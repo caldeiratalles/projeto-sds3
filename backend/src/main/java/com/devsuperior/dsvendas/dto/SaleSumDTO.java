@@ -2,6 +2,8 @@ package com.devsuperior.dsvendas.dto;
 
 import java.io.Serializable;
 
+import com.devsuperior.dsvendas.entities.Seller;
+
 public class SaleSumDTO implements Serializable{
 	/**
 	 * 
@@ -12,7 +14,7 @@ public class SaleSumDTO implements Serializable{
 	
 	public SaleSumDTO() {}
 
-	public SaleSumDTO(SellerDTO seller, Double sum) {
+	public SaleSumDTO(Seller seller, Double sum) {
 		super();
 		this.sellerName = seller.getName();
 		this.sum = sum;
@@ -33,6 +35,8 @@ public class SaleSumDTO implements Serializable{
 	public void setSum(Double sum) {
 		this.sum = sum;
 	}
+
+
 	
 	
 }
